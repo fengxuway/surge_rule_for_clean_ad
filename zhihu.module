@@ -1,15 +1,15 @@
 [Rule]
-URL-REGEX,https:\/\/(www|zhuanlan).zhihu.com\/api\/v4\/search\/related_queries\/answer\/\w+,REJECT // 知乎问题相关搜索关键词
-URL-REGEX,https:\/\/(www|zhuanlan).zhihu.com\/api\/v\d+/answers/\w+/recommendations,REJECT // 知乎答案广告
-URL-REGEX,https:\/\/api.zhihu.com\/commercial_api\/real_time_launch_v2,REJECT // 知乎预加载开屏广告
-URL-REGEX,https:\/\/api.zhihu.com\/commercial_api\/launch_v2,REJECT // 知乎预加载开屏广告
-DOMAIN,ossgw.alicdn.com,REJECT // 知乎首屏广告 alicdn
-URL-REGEX,https:\/\/lens.zhihu.com\/api\/v\d+\/videos\/\w+,REJECT // 知乎视频广告
-URL-REGEX,https:\/\/vdn\d*.vzuu.com\/[H|S]D\/.*,REJECT // 知乎视频广告
+URL-REGEX,https:\/\/(www|zhuanlan).zhihu.com\/api\/v4\/search\/related_queries\/answer\/\w+,REJECT # 知乎问题相关搜索关键词
+URL-REGEX,https:\/\/(www|zhuanlan).zhihu.com\/api\/v\d+/answers/\w+/recommendations,REJECT # 知乎答案广告
+URL-REGEX,https:\/\/api.zhihu.com\/commercial_api\/real_time_launch_v2,REJECT # 知乎预加载开屏广告
+URL-REGEX,https:\/\/api.zhihu.com\/commercial_api\/launch_v2,REJECT # 知乎预加载开屏广告
+DOMAIN,ossgw.alicdn.com,REJECT # 知乎首屏广告 alicdn
+URL-REGEX,https:\/\/lens.zhihu.com\/api\/v\d+\/videos\/\w+,REJECT # 知乎视频广告
+URL-REGEX,https:\/\/vdn\d*.vzuu.com\/[H|S]D\/.*,REJECT # 知乎视频广告
 URL-REGEX,https:\/\/www.zhihu.com\/api\/v\d+\/answers\/\w+\/recommendations.*?load_new_ad.*,REJECT
-DOMAIN-SUFFIX,umengcloud.com,REJECT // 友盟
-DOMAIN-SUFFIX,umeng.com,REJECT // 友盟广告
-URL-REGEX,^https:\/\/api\.zhihu\.com\/bazaar\/vip_tab\/header\?downgradable=\d*&user_mode=full$,REJECT // 知乎vip弹框
+DOMAIN-SUFFIX,umengcloud.com,REJECT # 友盟
+DOMAIN-SUFFIX,umeng.com,REJECT # 友盟广告
+URL-REGEX,^https:\/\/api\.zhihu\.com\/bazaar\/vip_tab\/header\?downgradable=\d*&user_mode=full$,REJECT # 知乎vip弹框
 DOMAIN-SUFFIX,mzstatic.com,DIRECT
 
 [MITM]
@@ -17,3 +17,4 @@ hostname = %APPEND% *.vzuu.com, api.zhihu.com, zhuanlan.zhihu.com, www.zhihu.com
 
 [Script]
 知乎答案列表广告 = type=http-response,pattern=https:\/\/api.zhihu.com\/questions\/\w+/feeds,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/fengxuway/surge_rule_for_clean_ad/main/zhihu_list_feed_ad.js,script-update-interval=0
+
