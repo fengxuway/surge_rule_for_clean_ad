@@ -1,3 +1,6 @@
+#!name=移除知乎广告 by fengxu
+#!desc=规则移除了知乎首屏广告、答案列表广告、答案详情底部广告、答案详情底部的推荐词
+
 [Rule]
 URL-REGEX,https:\/\/(www|zhuanlan).zhihu.com\/api\/v4\/search\/related_queries\/answer\/\w+,REJECT # 知乎问题相关搜索关键词
 URL-REGEX,https:\/\/(www|zhuanlan).zhihu.com\/api\/v\d+/answers/\w+/recommendations,REJECT # 知乎答案广告
