@@ -1,13 +1,13 @@
 ## 中国天气 app 接入的广告
 
-DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
-DOMAIN-SUFFIX,tuiyes.com,REJECT
-DOMAIN-SUFFIX,adkwai.com,REJECT
-DOMAIN,ad.data.lianjia.com,REJECT
-DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
-DOMAIN,qzs.gdtimg.com,REJECT
-DOMAIN-SUFFIX,adkwai.com,REJECT
-DOMAIN-SUFFIX,yximgs.com,REJECT
-DOMAIN,open.e.kuaishou.com,REJECT
-DOMAIN-SUFFIX,umengcloud.com,REJECT
-DOMAIN-SUFFIX,umeng.com,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
+DOMAIN-SUFFIX,tuiyes.com
+DOMAIN-SUFFIX,adkwai.com
+DOMAIN,ad.data.lianjia.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+DOMAIN,qzs.gdtimg.com
+DOMAIN-SUFFIX,adkwai.com
+DOMAIN-SUFFIX,yximgs.com
+DOMAIN,open.e.kuaishou.com
+DOMAIN-SUFFIX,umengcloud.com
+DOMAIN-SUFFIX,umeng.com
