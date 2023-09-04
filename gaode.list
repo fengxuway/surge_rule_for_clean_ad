@@ -1,0 +1,4 @@
+## 高德部分规则，待更新
+
+IP-CIDR,61.182.130.224/32,REJECT,no-resolve
+DOMAIN,cache.gaode.com,REJECT
